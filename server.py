@@ -2,11 +2,7 @@ from flask import Flask, request
 import json
 import requests
 from twilio.rest import TwilioRestClient
-# ACCOUNT_SID = "AC08104111c524d56d95117df1d60f2283"
-# ACCOUNT_TOKEN = "d5429aa8bd9592b9fd94c0a3b8a9877c"
 
-account_sid = "AC08104111c524d56d95117df1d60f2283"
-auth_token  = "d5429aa8bd9592b9fd94c0a3b8a9877c"
 client = TwilioRestClient(account_sid, auth_token)
 fromnumber = "+18563228074"
 app = Flask(__name__)
